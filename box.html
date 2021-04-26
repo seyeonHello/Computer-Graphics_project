@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<title>Final Homework</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="gl-matrix.js"> </script>
+<script>
+window['mat4'] = glMatrix.mat4;
+window['vec4'] = glMatrix.vec4;
+window['vec3'] = glMatrix.vec4;
+</script>
+<script type="text/javascript" src="box.js"> </script>
+
+</head>
+
+<body onload="main()">
+  <div class=title>
+    <h3>WebGL tutorial</h3>
+  </div>
+  <div class=title>
+    <h4>Let's learn about Transformation & Fragment Operation with Texture Mapped Cube! You can simulate each component.</h4>
+  <hr>
+  </div>
+  <section>
+    <article id="sec_article1">
+        <canvas id="helloapicanvas" style="border: none;" width="600" height="450"></canvas>
+    </article>
+</section>
+<aside>
+  <article id="asi_article3">
+  <h4>Rotation</h4>
+</article>
+    <article id="asi_article2">
+      <button class="button" onclick="xRotation()" style="width: 90px; height: 30px;">xRotation</button>
+      <button class="button" onclick="yRotation()" style="width: 90px; height: 30px;">yRotation</button>
+      <button class="button" onclick="zRotation()" style="width: 90px; height: 30px;">zRotation</button>
+      <button class="button" onclick="xyRotation()" style="width: 90px; height: 30px;">xyRotation</button>
+      <button class="button" onclick="yzRotation()" style="width: 90px; height: 30px;">yzRotation</button>
+      <button class="button" onclick="xzRotation()" style="width: 90px; height: 30px;">xzRotation</button>
+    </article>
+    <article id="asi_article2">
+    <h4>Translate</h4>
+  </article>
+
+    <article id="asi_article2">
+      <button class="button" onclick="addTranslateX()" style="width: 90px; height: 30px;">moveX(+)</button>
+      <button class="button" onclick="subTranslateX()" style="width: 90px; height: 30px;">moveX(-)</button>
+      <button class="button" onclick="addTranslateY()" style="width: 90px; height: 30px;">moveY(+)</button>
+      <button class="button" onclick="subTranslateY()" style="width: 90px; height: 30px;">moveY(-)</button>
+      <button class="button" onclick="addTranslateZ()" style="width: 90px; height: 30px;">moveZ(+)</button>
+      <button class="button" onclick="subTranslateZ()" style="width: 90px; height: 30px;">moveZ(-)</button>
+    </article>
+    <article id="asi_article2">
+    <h4>Scale</h4>
+  </article>
+
+    <article id="asi_article2">
+      <button class="button" onclick="scaleDOWN()" style="width: 100px; height: 30px;">zoom-out</button>
+      <button class="button" onclick="scaleUP()" style="width: 100px; height: 30px;">zoom-in</button>
+    </article>
+    <article id="asi_article2">
+    <h4>Reflection</h4>
+  </article>
+  <article id="asi_article2">
+    <button class="button" onclick="xReflection()" style="width: 100px; height: 30px;">xReflection</button>
+    <button class="button" onclick="yReflection()" style="width: 100px; height: 30px;">yReflection</button>
+    <button class="button" onclick="zReflection()" style="width: 100px; height: 30px;">zReflection</button>
+  </article>
+    <article id="asi_article2">
+    <h4>Fragment Operation</h4>
+  </article>
+
+    <div id="asi_article2">
+      <button class="button" onclick="depthTest()" style="width: 100px; height: 30px;">toggleDepth</button>
+      <button class="button" onclick="scissorTest()" style="width: 100px; height: 30px;">toggleScissor</button>
+    </article>
+</aside>
+</body>
+<footer>
+  <h6>
+    *****(CC-NC-BY) Kim Seyeon 2020, a picture drawn by me*****<br>
+    Reference: https://git.ajou.ac.kr/hwan/cg_course/-/blob/master/WebGL/frag_op/hello.js,
+             https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2018/201320968
+  </h6>
+  <h7>
+
+  </h7>
+</footer>
+</html>
+<style>
+.button{
+  border: 1px solid white;
+  background-color: Mistyrose;
+  color: tomato;
+}
+#sec_article1{
+  float:left;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+#asi_article2{
+  float:right;
+  width:50%;
+
+}
+#asi_article3{
+  float:right;
+  width:50%;
+}
+footer{
+  clear:both;
+  width:100%;
+}
+</style>
