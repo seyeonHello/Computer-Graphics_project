@@ -1,5 +1,4 @@
 # WebGL Tutorial
-## :bell: 2020-1 computer graphics :bell:
 
 ## 0. Motivation
 In class I was confused about fragment operation and rotation on several axes. 
